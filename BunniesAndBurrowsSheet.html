@@ -1,0 +1,71 @@
+<div class="main">
+    
+    <div class="header section">
+        <label>Player: <input name="attr_player_name" type="text"/></label>
+        <label>Name: <input type="text" name="attr_character_name"/></label><br />
+		<label>Profession: <input type="text" name="attr_profession"/> Level: <input type="number" name="attr_lvl" /></label>
+    </div>
+    
+    <div class="common section">
+      <label>Char name: <input name="attr_character_name" type="text"/></label>
+      <label>Class: <input name="attr_type" type="text" /></label>
+      <label>Race: <input name="attr_race" type="text" /></label>
+      <label>HP: <input type="number" name="attr_cha" value="20"/></label>
+    </div>
+    
+    
+    <div class="charac section">
+        
+        <div class="flex-col">
+            <div class="flex-row"><label>Characteristics</label></div>
+        </div>
+        
+        <div class="flex-col">
+             <div class="flex-row"><label class="smlab">Value</label><label class="smlab">Level</label><label class="smlab"> Exp</label></div>
+        </div>
+            
+        <div class="flex-col">
+            <div class="flex-row"><label class="smlab">Strength</label></div>
+            <div class="flex-row"><input type="number" name="attr_str" value="10"/></div>
+            <div class="flex-row"><input type="number" name="attr_str_lvl" value="0"/></div>
+            <div class="flex-row"><label> </label></div>
+            <div class="flex-row"><input type="number" name="attr_str_exp" value="0"/></div>
+        </div>
+        <div class="flex-col">
+            <div class="flex-row"><label class="smlab">Speed</label></div>
+            <div class="flex-row"><input type="number" name="attr_spd" value="10"/></div>
+            <div class="flex-row"><input type="number" name="attr_spd_lvl" value="0"/></div>
+            <div class="flex-row"><label> </label></div>
+            <div class="flex-row"><input type="number" name="attr_spd_exp" value="0"/></div>
+        </div>
+      
+    </div>
+    
+    
+    <div class="power section flex-col">
+      <label>Power</label>
+      <fieldset class="repeating_power">
+          <input name="attr_power" type="text" />
+      </fieldset>
+    </div>
+   
+    <div class="attack section">
+      <label>Attacks</label>
+      <textarea name="attr_attacks"></textarea>
+    </div>
+  
+    <div class="inv section">
+      <label>Inventory</label>
+      <textarea name="attr_inventory"></textarea>
+    </div>
+  
+    <div class="misc section">
+      <label>Physical Description</label>
+      <textarea name="attr_description"></textarea>
+    </div>
+   
+    <div class="footer flex-col">
+      <span>Generic copyright disclaimer</span>
+    </div>
+
+</div>
