@@ -4,20 +4,24 @@
   width: 800px;
   height: 900px;
   grid-gap: 4px;
-  grid-template-columns: 2.4fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-areas:"header  header  header  header"
-                      "charac   common  common  power"
-                      "charac   attack  inv     power"
-                      "charac   misc    inv     power"
-                      "footer  footer  footer  footer";
+  grid-template-areas:"header  header misc    misc"
+                      "charac  skill  skill   skill"
+                      "charac  skill  skill   skill"
+                      "charac  skill  skill   skill"
+                      "combat  combat combat  combat"
+                      "inv     inv    inv     inv"
+                      "food    food   food    food"
+                      "herb    herb   herb    herb"
+                      "footer  footer footer  footer";
 }
 
 /*----------------- GENERAL CSS ------------------*/
 
 textarea {
   width: 90%;
-  height: 85%;
+  height: 75%;
 }
 
 .sheet-section {
@@ -64,12 +68,17 @@ input {
   grid-area: common;
 }
 
-.sheet-power {
-  grid-area: power;
+.sheet-skill {
+  grid-area: skill;
+  display: flex;
+  flex-direction:column;
+  align-items:flex-start;
 }
 
-.sheet-attack {
-  grid-area: attack;
+.sheet-combat {
+  grid-area: combat;
+    display: flex;
+  flex-direction:column;
 }
 
 .sheet-inv {
@@ -78,6 +87,14 @@ input {
 
 .sheet-misc {
   grid-area: misc;
+}
+
+.sheet-food {
+  grid-area: food;
+}
+
+.sheet-herb {
+  grid-area: herb;
 }
 
 .sheet-footer {
