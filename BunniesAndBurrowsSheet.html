@@ -6,11 +6,9 @@
 		<label>Profession: <input type="text" name="attr_profession"/> Level: <input type="number" name="attr_lvl" /></label>
     </div>
     
-    <div class="common section">
-      <label>Char name: <input name="attr_character_name" type="text"/></label>
-      <label>Class: <input name="attr_type" type="text" /></label>
-      <label>Race: <input name="attr_race" type="text" /></label>
-      <label>HP: <input type="number" name="attr_cha" value="20"/></label>
+    <div class="misc section">
+      <label>Physical Description</label>
+      <textarea name="attr_description"></textarea>
     </div>
     
     
@@ -84,26 +82,87 @@
     </div>
     
     
-    <div class="power section flex-col">
-      <label>Power</label>
-      <fieldset class="repeating_power">
-          <input name="attr_power" type="text" />
-      </fieldset>
+    <div class="skill section">
+         <div class="flex-col">
+            <div class="flex-row">
+                <label>Skills</label>
+            </div>
+        </div>
+        <div class="flex-col">
+            <div class="flex-row">
+                <label class="smlab">Associated Profession:</label>
+            </div>
+        </div>
+        <div class="flex-col">
+            <div class="flex-row"><label class="smlab">Fighter </label></div>
+	        <div class="flex-row">Damage Bonus:  </div>
+            <div class="flex-row"><input type="number" name="dam_bonus" value="0"/></div>
+        </div>
+        <div class="flex-col">
+            <div class="flex-row"><label class="smlab">Runner </label></div>
+	        <div class="flex-row">Defense Class:  </div>
+            <div class="flex-row"><input type="number" name="defense_class" value="0"/></div>
+        </div>        
+                <div class="flex-col">
+            <div class="flex-row"><label class="smlab">Herbalist </label></div>
+	        <div class="flex-row">Detect safe food?  </div>
+            <div class="flex-row"><input type="checkbox" name="detect_safe_food" value="0"/></div>
+        </div>
+                <div class="flex-col">
+            <div class="flex-row"><label class="smlab">Scout </label></div>
+	        <div class="flex-row">Chance to detect trap clue:  </div>
+            <div class="flex-row"><input type="number" name="detect_trap_clue" value="0"/></div>
+        </div>
+                <div class="flex-col">
+            <div class="flex-row"><label class="smlab">Seer </label></div>
+	        <div class="flex-row">Trance Points:  </div>
+            <div class="flex-row"><input type="number" name="trance_points" value="0"/></div>
+        </div>
+                <div class="flex-col">
+            <div class="flex-row"><label class="smlab">Maverick </label></div>
+	        <div class="flex-row">Max items carried:  </div>
+            <div class="flex-row"><input type="number" name="max_items_carried" value="0"/></div>
+        </div>
+                <div class="flex-col">
+            <div class="flex-row"><label class="smlab">Empath </label></div>
+	        <div class="flex-row">Max Energy Points:  </div>
+            <div class="flex-row"><input type="number" name="max_energy_points" value="0"/></div>
+        </div>
+                <div class="flex-col">
+            <div class="flex-row"><label class="smlab">Storyteller </label></div>
+	        <div class="flex-row">Base chance to Persuade:  </div>
+            <div class="flex-row"><input type="number" name="base_chance_to_persuade" value="0"/></div>
+        </div>
     </div>
    
-    <div class="attack section">
-      <label>Attacks</label>
-      <textarea name="attr_attacks"></textarea>
+    <div class="combat section">
+      <label>Combat</label></br>
+      <label class="smlab">Max Hit Points: </label><input type="number" name="max_hit_points" value="4"/>
+      <label class="smlab">Current Hit Points: </label><input type="number" name="current_hit_points" value="4"/>
+      
     </div>
   
     <div class="inv section">
       <label>Inventory</label>
       <textarea name="attr_inventory"></textarea>
     </div>
-  
-    <div class="misc section">
-      <label>Physical Description</label>
-      <textarea name="attr_description"></textarea>
+ 
+    <div class="food section flex-col">
+      <label>Food</label>
+      
+            <label class="smlab">Max Energy Points: </label><input type="number" name="max_energy_points" value="2"/>
+      <label class="smlab">Current Energy Points: </label><input type="number" name="current_energy_points" value="2"/>
+      
+      <fieldset class="repeating_foodknown">
+          <input name="attr_foodknown" type="text" />
+      </fieldset>
+    </div>
+    
+        <div class="herb section flex-col">
+      <label>Herbs</label>
+      <fieldset class="repeating_herbknown">
+          <input name="attr_herbknown" type="text" />
+      </fieldset>
     </div>
    
     <div class="footer flex-col">
